@@ -97,11 +97,37 @@ body {
 .login-form .input-group {
     margin-bottom: 15px;
 }
+.login-logo {
+    max-width: 100%;
+}
 
 
 
 
-
+@media only screen and (max-width: 768px) {
+    .login-form {
+        width: 100%;
+        margin: auto;
+    }
+    .login-cover {
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .login-form-layer{
+        background-size: 100% 100vh;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .login-form input{
+        width: 100;
+        margin-bottom: 20px;
+    }
+    .login-form button{
+        width:100;
+    }
+}
 
 
 @media only screen and (min-width: 1510px) {
