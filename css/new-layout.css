@@ -1,0 +1,117 @@
+/*
+Theme Name: Tanvir Shaikat
+Author: Tanvir Shaikat
+Email: ta.shaikat@gmail.com;
+Author URI: https://tanvirshaikat.com/
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+body {
+    overflow-x: hidden;
+    font: 16px/24px Heebo;
+}
+.full-container{
+    max-width: 100%;
+    width: 100%;
+}
+.login-cover {
+    height: 100vh;
+    overflow: hidden;
+    /*background-size: auto 100vh;*/
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.login-form-layer{
+    height: 100vh;
+    background-size: auto 100vh;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.login-form {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40vh;
+    margin-left: 12vh;
+}
+.login-form h1{
+    font: 600 32px/40px Heebo;
+    letter-spacing: 0px;
+    color: #4B4B4B;
+}
+.login-form p{
+    font: Regular 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #C1C1C1;
+    margin-bottom: 30px;
+}
+.login-form input{
+    width: 387px !important;
+    height: 52px;
+    background: #FEFEFE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 16px #A5A5A538;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    outline: none !important;
+    margin-bottom: 20px;
+}
+.login-form input:focus{
+    outline: none !important;
+    box-shadow: none;
+    border: 1px solid #E2E2E2;
+}
+.login-form button{
+    width: 387px !important;
+    height: 42px;
+    background: #3FDA85 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 16px #A5A5A538;
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+    font: 400 20px/28px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    display: block;
+}
+.login-form .input-group-addon {
+    padding: 7px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: #949494;
+    text-align: center;
+    background-color: #fff;
+    border: 0px;
+    border-radius: 0px;
+    position: absolute;
+    z-index: 9;
+    margin-left: 25px !important;
+    right: 15px;
+    margin-top: 9px;
+}
+.login-form .input-group {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1510px) {
+    .login-form {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 40vh;
+        margin-left: 14vh;
+    }
+}
+
