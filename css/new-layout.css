@@ -45,7 +45,7 @@ body {
     color: #4B4B4B;
 }
 .login-form p{
-    font: Regular 16px/24px Heebo;
+    font: 400 16px/24px Heebo;
     letter-spacing: 0px;
     color: #C1C1C1;
     margin-bottom: 30px;
@@ -106,8 +106,10 @@ body {
 
 @media only screen and (max-width: 768px) {
     .login-form {
-        width: 100%;
+        width: 85%;
+        position: relative;
         margin: auto;
+        overflow: hidden;
     }
     .login-cover {
         overflow: hidden;
@@ -116,16 +118,22 @@ body {
         background-repeat: no-repeat;
     }
     .login-form-layer{
-        background-size: 100% 100vh;
+        background-size: 125% 100vh;
         background-position: left;
         background-repeat: no-repeat;
     }
     .login-form input{
-        width: 100;
-        margin-bottom: 20px;
+        width: 85vw !important;
+        height: 45px !important;
     }
     .login-form button{
-        width:100;
+        width:100% !important;
+    }
+    .login-logo {
+        max-width: 245px;
+    }
+    .login-form h1 {
+        font: 600 28px/40px Heebo !important;
     }
 }
 
