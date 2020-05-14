@@ -102,6 +102,68 @@ body {
 }
 
 
+/*header css*/
+
+header {
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    height: 84px;
+    width: 100%;
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+a.navbar-brand img {
+    max-width: 208px;
+    margin-top: 19px;
+    padding-top: 7px;
+    margin-right: 70px;
+}
+.aviation-head li a {
+    text-align: left;
+    font: 600 16px/32px Heebo;
+    letter-spacing: 0px;
+    color: #101010;
+    padding: 26px 16px;
+}
+.nav>li>a:focus, .nav>li>a:hover, .nav>li>a.active {
+    text-decoration: none;
+    background: #3FDA85 0% 0% no-repeat padding-box;
+    color: #fff;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #3FDA85;
+    border-color: transparent;
+}
+.dropdown-menu li a, .dropdown-submenu li a {
+    padding: 6px 20px;
+    border-bottom: 1px solid #00000026;
+    text-decoration: none;
+}
+.dropdown-menu, .dropdown-submenu{
+    padding: 0px;
+}
+a.user i {
+    background-color: #3fda85;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 7px;
+    font-size: 14px;
+    margin-right: 4px;
+}
+.nav>li>a:hover i {
+    background-color: #fff;
+    color: #3fda85;
+}
+/*header css end*/
+
+
 
 
 @media only screen and (max-width: 768px) {

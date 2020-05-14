@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/new-layout.css" rel="stylesheet">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link rel='stylesheet' href='css/animate.css'>
+      <script src='js/jquery.min.js'></script>
+      
+   </head>
+   <body style="background-color: #F5F5F5;">
+      <header>
+          <nav class="container aviation-head navbar navbar-fixed-top" role=navigation>
+             <div class=navbar-header>
+                <button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+                <span class=sr-only>Toggle navigation</span>
+                <i class=material-icons>apps</i>
+                </button>
+                <a class=navbar-brand href="/Home/Index">
+                <img style="width:100%; height: auto; margin-top: 3px;" src="images/army-aviation logo.png" />
+                </a>
+             </div>
+             <div class=nav-container>
+                <ul class="nav navbar-nav hidden-xs">
+                   <li class="dropdown hidden-sm">
+                      <a class="active" href="#" class="dropdown-toggle material-ripple" data-toggle=dropdown>Setup<b class=caret></b></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="/Setup/Units">Unit</a></li>
+                         <li><a href="/Setup/Nomenclature">Nomenclature</a></li>
+                         <li><a href="/Setup/MaintLoad">Maint Load</a></li>
+                         <li><a href="/Setup/Spare">Spare</a></li>
+                         <li><a href="/Setup/Rank">Rank</a></li>
+                         <li><a href="/Setup/Appointment">Appointment</a></li>
+                         <li><a href="/Setup/People">Person</a></li>
+                         <li><a href="/Setup/NomenResponsiblePerson/Create">Nomen Res Person</a></li>
+                         <li class="dropdown-submenu">
+                            <a href="#" class="test"> <span class="nav-label">Service C <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                               <li><a href="#">Service C1</a></li>
+                               <li><a href="#">Service C2</a></li>
+                               <li><a href="#">Service C3</a></li>
+                               <li><a href="#">Service C4</a></li>
+                               <li><a href="#">Service C5</a></li>
+                               <li>
+                                 <a class="test" href="#">3rd tier <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">4th tier 1</a></li>
+                                      <li><a href="#">4th tier 2</a></li>
+                                    </ul>
+                               </li>
+                            </ul>
+                         </li>
+                      </ul>
+                   </li>
+                   <li class="dropdown hidden-sm">
+                      <a href="#" class="dropdown-toggle material-ripple" data-toggle=dropdown>Flight Lane<b class=caret></b></a>
+                      <ul class="dropdown-menu">
+                         <li> <a href="/FlightLane/FLWorkOrder">Work Order</a></li>
+                         <li> <a href="/FlightLane/Flight">Flight</a></li>
+                         <li> <a href="/FlightLane/Flight/FlyingHourApproval">Flying Hours Approval</a></li>
+                         <li> <a href="/FlightLane/FlightReport/PersonFlyingReport">Person Flying Hours</a></li>
+                         <li> <a href="/FlightLane/FlightReport/DecurrentReport">Decurrent Report</a></li>
+                      </ul>
+                   </li>
+                   <li class="dropdown hidden-sm">
+                      <a href="#" class="dropdown-toggle material-ripple" data-toggle=dropdown>Store<b class=caret></b></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="/Store/StoreDemand/DemandFromFL">Demand from Flight Lane</a></li>
+                         <li><a href="/Store/StoreDemand/DemandToCMTD">Demand to CMTD</a></li>
+                         <li><a href="/Store/SparesReceive/ReceiveableList">Receive from CMTD</a></li>
+                         <li><a href="/Store/Stock/StockAdministration">Stock</a></li>
+                      </ul>
+                   </li>
+                   <li class="dropdown hidden-sm">
+                      <a href="#" class="dropdown-toggle material-ripple" data-toggle=dropdown>CMTD<b class=caret></b></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="/CMTD/CMTDDemand/StoreDemandList">Demand from Store</a></li>
+                      </ul>
+                   </li>
+                   <li class="dropdown hidden-sm">
+                      <a href="#" class="dropdown-toggle material-ripple" data-toggle=dropdown>Administration<b class=caret></b></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="/Account/Register">Add New User</a></li>
+                         <li><a href="/Account/UserList">User List</a></li>
+                      </ul>
+                   </li>
+                   <li class="dropdown hidden-sm">
+                      <a href="#" class="dropdown-toggle material-ripple" data-toggle=dropdown>Menu Management<b class=caret></b></a>
+                      <ul class="dropdown-menu">
+                         <li><a href="/Setup/AppArea">Area</a></li>
+                         <li><a href="/Setup/AppController">Controller</a></li>
+                         <li><a href="/Setup/AppActionResult">Action Result</a></li>
+                         <li><a href="/Setup/AppMenu">Menu</a></li>
+                         <li><a href="/Setup/AppMenu/MenuPermission">Menu Permission</a></li>
+                      </ul>
+                   </li>
+
+                   <li class="dropdown user-menu pull-right">
+                      <a class="user dropdown-toggle text-white" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user"></i> Rahim <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-user">
+                         <li>
+                            <a href="/Manage/ChangePassword">Change Password</a>
+                         </li>
+                         <li class="logout">
+                            <form action="/Account/LogOff" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="fjTCIRDRio5oFYcYe_-9VyEuT2Bv9Mvcwlhnf7mKiIwvTsfw-aNGNi70PIWKfifqTVDSG4dSX5NIPkZzc78Z6FCGzcvPGSMEuJAO-P0iiYKeqRCbfftQNZS6K0BEVbUnpoeoyFXtSLopAZKm-8-xrg2" />                            <a href="javascript:document.getElementById('logoutForm').submit()">
+                               <i class="ti-layout-sidebar-left"></i>&nbsp; Logout
+                               </a>
+                            </form>
+                         </li>
+                      </ul>
+                   </li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right">
+                   
+                </ul>
+             </div>
+          </nav>
+      </header>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/new-layout.js"></script>
+   </body>
+</html>
